@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.mapper.action.prefix.enabled" value="true"/>
+	<package name="com.actions" extends="struts-default">
+	
+		<action name="altaCliente" class="com.actions.ClienteAction" method="altaCliAc">
+			<result>/index.jsp</result>
+		</action>
+ 		<action name="consultaClientes" class="com.actions.ClienteAction" method="consultaCliAc">
+			<result>/consultaClientes.jsp</result>
+		</action>
+		<action name="modificacion1Clientes" class="com.actions.ClienteAction" method="inicioModificacionCliAc">
+			<result>/modificacion.jsp</result>
+		</action>
+			<action name="modificarClientes" class="com.actions.ClienteAction" method="modificaCliAc">
+			<result>/index.jsp</result>
+		</action>
+		<action name="borrarClientes" class="com.actions.ClienteAction" method="borraCliAc">
+			<result>/index.jsp</result>
+		</action> 
+		
+		<action name="altaPerfil" class="com.actions.PerfilAction" method="altaPeAc">
+			<result>/index.jsp</result>
+		</action>
+ 		<action name="consultaPerfiles" class="com.actions.PerfilAction" method="consultaPeAc">
+			<result>/consultaRequisitos.jsp</result>
+		</action>
+		<action name="modificacion1Perfil" class="com.actions.PerfilAction" method="inicioModificacionPeAc">
+			<result>/modificacion.jsp</result>
+		</action>
+			<action name="modificarPerfil" class="com.actions.PerfilAction" method="modificaPeAc">
+			<result>/index.jsp</result>
+		</action>
+		<action name="borrarPerfil" class="com.actions.PerfilAction" method="borraPeAc">
+			<result>/index.jsp</result>
+		</action> 
+		
+		<action name="altaUsuario" class="com.actions.UsuarioAction" method="altaUsAc">
+			<result>/index.jsp</result>
+		</action>
+ 		<action name="consultaUsuarios" class="com.actions.UsuarioAction" method="consultaUsAc">
+			<result>/consultaRequisitos.jsp</result>
+		</action>
+		<action name="modificacion1Usuario" class="com.actions.UsuarioAction" method="inicioModificacionUsAc">
+			<result>/modificacion.jsp</result>
+		</action>
+			<action name="modificarUsuario" class="com.actions.UsuarioAction" method="modificaUsAc">
+			<result>/index.jsp</result>
+		</action>
+		<action name="borrarUsuario" class="com.actions.UsuarioAction" method="borraUsAc">
+			<result>/index.jsp</result>
+		</action> 
+		
+		<action name="altaProyecto" class="com.actions.ProyectoAction" method="altaPrAc">
+			<result>/index.jsp</result>
+		</action>
+ 		<action name="consultaProyectos" class="com.actions.ProyectoAction" method="consultaPrAc">
+			<result>/consultaRequisitos.jsp</result>
+		</action>
+		<action name="modificacion1Proyecto" class="com.actions.ProyectoAction" method="inicioModificacionPrAc">
+			<result>/modificacion.jsp</result>
+		</action>
+			<action name="modificarProyecto" class="com.actions.ProyectoAction" method="modificaPrAc">
+			<result>/index.jsp</result>
+		</action>
+		<action name="borrarProyecto" class="com.actions.ProyectoAction" method="borraPrAc">
+			<result>/index.jsp</result>
+		</action> 
+		
+		<action name="altaRequisto" class="com.actions.RequisitoAction" method="altaReAc">
+			<result>/index.jsp</result>
+		</action>
+ 		<action name="consultaRequisitos" class="com.actions.RequisitoAction" method="consultaReAc">
+			<result>/consultaRequisitos.jsp</result>
+		</action>
+		<action name="modificacion1Requisitos" class="com.actions.RequisitoAction" method="inicioModificacionReAc">
+			<result>/modificacion.jsp</result>
+		</action>
+			<action name="modificarRequisitos" class="com.actions.RequisitoAction" method="modificaReAc">
+			<result>/index.jsp</result>
+		</action>
+		<action name="borrarRequisitos" class="com.actions.RequisitoAction" method="borraReAc">
+			<result>/index.jsp</result>
+		</action>  
+		
+		<action name="altaPrueba" class="com.actions.PruebaAction" method="altaTestAc">
+			<result>/index.jsp</result>
+		</action>
+ 		<action name="consultaPruebas" class="com.actions.PruebaAction" method="consultaTestAc">
+			<result>/consultaRequisitos.jsp</result>
+		</action>
+		<action name="modificacion1Prueba" class="com.actions.PruebaAction" method="inicioModificacionTestAc">
+			<result>/modificacion.jsp</result>
+		</action>
+			<action name="modificarPrueba" class="com.actions.PruebaAction" method="modificaTestAc">
+			<result>/index.jsp</result>
+		</action>
+		<action name="borrarPrueba" class="com.actions.PruebaAction" method="borraTestAc">
+			<result>/index.jsp</result>
+		</action> 
+		
+		<action name="altaAnexo" class="com.actions.AnexoAction" method="altaAnAc">
+			<result>/index.jsp</result>
+		</action>
+ 		<action name="consultaAnexos" class="com.actions.AnexoAction" method="consultaAnAc">
+			<result>/consultaAnexos.jsp</result>
+		</action>
+		<action name="modificacion1Anexos" class="com.actions.AnexoAction" method="inicioModificacionAnAc">
+			<result>/modificacion.jsp</result>
+		</action>
+			<action name="modificarAnexos" class="com.actions.AnexoAction" method="modificaAnAc">
+			<result>/index.jsp</result>
+		</action>
+		<action name="borrarAnexos" class="com.actions.AnexoAction" method="borraAnAc">
+			<result>/index.jsp</result>
+		</action> 
+		
+		
+		
+	</package>
+</struts>
