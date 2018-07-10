@@ -1,10 +1,15 @@
 package com.entities;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 
 @Entity
@@ -17,13 +22,13 @@ public class Usuario {
 	private String nombre ;
 	private String apellidos ;
 	private String nom_usuario ;
-	private String passwd ;
+	private String password ;
 	
 	@ManyToOne
 	private Perfil perfil ;
 	
-	@ManyToOne
-	private Proyecto proyecto ;
+	@OneToMany(cascade=CascadeType.ALL, fetch = FetchType.EAGER, mappedBy="usuario")
+	private List<ProyectoUsuario> proyectosUsuario ;
 
 	public int getId_usuario() {
 		return id_usuario;
@@ -65,12 +70,12 @@ public class Usuario {
 		this.nom_usuario = nom_usuario;
 	}
 
-	public String getPasswd() {
-		return passwd;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPasswd(String passwd) {
-		this.passwd = passwd;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public Perfil getPerfil() {
@@ -81,12 +86,12 @@ public class Usuario {
 		this.perfil = perfil;
 	}
 
-	public Proyecto getProyecto() {
-		return proyecto;
+	public List<ProyectoUsuario> getProyectosUsuario() {
+		return proyectosUsuario;
 	}
 
-	public void setProyecto(Proyecto proyecto) {
-		this.proyecto = proyecto;
+	public void setProyectosUsuario(List<ProyectoUsuario> proyectosUsuario) {
+		this.proyectosUsuario = proyectosUsuario;
 	}
-	
+
 }

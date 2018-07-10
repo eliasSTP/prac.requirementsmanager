@@ -3,7 +3,9 @@ package com.actions;
 import java.util.List;
 
 import com.BO.ProyectoBO;
+import com.BO.UsuarioBO;
 import com.entities.Proyecto;
+import com.entities.Usuario;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class ProyectoAction extends ActionSupport {
@@ -13,17 +15,18 @@ public class ProyectoAction extends ActionSupport {
 	 */
 	private static final long serialVersionUID = 1L;
 	private Proyecto proyecto ;
+	private Usuario usuario ;
 	private List<Proyecto> proyectos ;
 	
 	public String altaPrAc() {
 		ProyectoBO proyectoBO = new ProyectoBO();
-		proyectoBO.alta(proyecto);
+		proyectoBO.altaProyecto(proyecto);
 		return SUCCESS;
 	}
 	
 	public String consultaPrAc() {
 		ProyectoBO proyectoBO = new ProyectoBO();
-		proyectos = proyectoBO.list();
+		proyectos = proyectoBO.listProyecto();
 		return SUCCESS;
 	}
 	
@@ -42,10 +45,23 @@ public class ProyectoAction extends ActionSupport {
 	
 	public String borraPrAc() {
 		ProyectoBO proyectoBO = new ProyectoBO();
-		proyectoBO.borra(proyecto);
+		proyectoBO.borraProyecto(proyecto);
 		return SUCCESS;
 	}
-
+	
+	public String listPrUsAc() {
+		//ProyectoBO proyectoBO = new ProyectoBO();
+		UsuarioBO usuarioBO = new UsuarioBO();
+		
+		Usuario usuario = new Usuario();
+		usuario.setId_mail("ecid@stp.es");
+		
+		usuario = usuarioBO.getUsuario(usuario);
+		
+		//proyectoBO.selectProUser(usuario);
+		return SUCCESS;
+	}
+	
 	public Proyecto getProyecto() {
 		return proyecto;
 	}
@@ -65,7 +81,14 @@ public class ProyectoAction extends ActionSupport {
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	
-	
 
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+	
+	
 }

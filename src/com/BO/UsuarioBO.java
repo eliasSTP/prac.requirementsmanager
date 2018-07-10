@@ -54,6 +54,5 @@ public class UsuarioBO {
 		transaction.commit();
 		session.close();
 	}
-
-
+	
 }

@@ -23,7 +23,7 @@ public class PerfilAction extends ActionSupport  {
 	
 	public String consultaPeAc() {
 		PerfilBO perfilBO = new PerfilBO();
-		perfiles = perfilBO.listPerfil();
+		perfiles = perfilBO.listPerfiles();
 		return SUCCESS;
 	}
 	
