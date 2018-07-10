@@ -10,7 +10,7 @@
 </head>
 <body>
 	<s:form method="post" action="altaCliente">
-		<s:textfield label="Introduce el nombre del cliente" name="cliente.nombre_cliente"/>
+		<s:textfield label="Introduce el nombre del cliente" name="cliente.nombre_cliente"/><br/>
 		<s:submit label="Alta" />
 	</s:form>
 
