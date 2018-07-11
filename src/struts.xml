@@ -94,13 +94,13 @@
 		</action>
 		<action name="borrarRequisitos" class="com.actions.RequisitoAction" method="borraReAc">
 			<result>/index.jsp</result>
-		</action>  
+		</action>   -->
 		
 		<action name="altaPrueba" class="com.actions.PruebaAction" method="altaTestAc">
 			<result>/index.jsp</result>
 		</action>
  		<action name="consultaPruebas" class="com.actions.PruebaAction" method="consultaTestAc">
-			<result>/consultaRequisitos.jsp</result>
+			<result>/consultaPruebas.jsp</result>
 		</action>
 		<action name="modificacion1Prueba" class="com.actions.PruebaAction" method="inicioModificacionTestAc">
 			<result>/modificacion.jsp</result>
@@ -127,7 +127,6 @@
 		<action name="borrarAnexos" class="com.actions.AnexoAction" method="borraAnAc">
 			<result>/index.jsp</result>
 		</action> 
-		
-	 -->
+	
 	</package>
 </struts>
