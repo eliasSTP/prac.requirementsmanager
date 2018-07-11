@@ -29,7 +29,7 @@ public class PerfilBO {
 	
 	public Perfil getPerfil(Perfil perfil) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
-		String queryString = "FROM Perfil WHERE id=(:condicion)";
+		String queryString = "FROM Perfil WHERE id_perfil=(:condicion)";
 		Query<Perfil> hqlQuery = session.createQuery(queryString);
 		hqlQuery.setParameter("condicion", perfil.getId_perfil());
 		perfil = hqlQuery.uniqueResult();

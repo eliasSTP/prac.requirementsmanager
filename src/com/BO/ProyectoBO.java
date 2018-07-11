@@ -39,7 +39,7 @@ public class ProyectoBO {
 	
 	public Proyecto getProyecto(Proyecto proyecto) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
-		String queryString = "FROM Proyecto where id=(:condicion)";
+		String queryString = "FROM Proyecto WHERE id_proyecto=(:condicion)";
 		Query<Proyecto> hqlQuery = session.createQuery(queryString);
 		hqlQuery.setParameter("condicion", proyecto.getId_proyecto());
 		proyecto = hqlQuery.uniqueResult();

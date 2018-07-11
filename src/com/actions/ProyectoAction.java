@@ -53,10 +53,10 @@ public class ProyectoAction extends ActionSupport {
 		//ProyectoBO proyectoBO = new ProyectoBO();
 		UsuarioBO usuarioBO = new UsuarioBO();
 		
-		Usuario usuario = new Usuario();
-		usuario.setId_mail("ecid@stp.es");
+		Usuario usuario1 = new Usuario();
+		usuario1.setId_usuario(6);
 		
-		usuario = usuarioBO.getUsuario(usuario);
+		usuario = usuarioBO.getUsuario(usuario1);
 		
 		//proyectoBO.selectProUser(usuario);
 		return SUCCESS;
@@ -89,6 +89,4 @@ public class ProyectoAction extends ActionSupport {
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
-	
-	
 }
