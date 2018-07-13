@@ -46,11 +46,9 @@ public class AnexoAction extends ActionSupport {
 	
 	public String listAnTestAc() {
 		PruebaBO pruebaBO = new PruebaBO();
-		AnexoBO anexoBO = new AnexoBO();
 		Prueba prueba1 = new Prueba();
 		prueba1.setId_prueba(idPrueba);
 		prueba = pruebaBO.getPrueba(prueba1);
-		anexos = anexoBO.getAnexos(idPrueba);
 		return SUCCESS;
 	}
 

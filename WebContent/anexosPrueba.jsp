@@ -8,7 +8,6 @@
 <title>Anexos</title>
 </head>
 <body>
-<h1>Proyecto: ${proyecto.id_proyecto} - ${proyecto.descripcion}</h1>
 <h1>Anexos de la prueba</h1>
 <h2>${prueba.descripcion_prueba}</h2>
 	<table border="1px" style="width:100%" >
@@ -22,14 +21,14 @@
 			<th style="width:25%">Documentación adicional</th>
 		</tr>
 		
-		<s:iterator value="anexos">
+		<s:iterator value="prueba.anexos">
 		<tr>
-			<td style="text-align: center;"><s:property value="anexo.id_anexo"/></td>
-			<td style="text-align: center;"><s:property value="anexo.captura_pantalla1"/></td>
-			<td style="text-align: center;"><s:property value="anexo.captura_pantalla2"/></td>
-			<td style="text-align: center;"><s:property value="anexo.captura_pantalla3"/></td>
-			<td style="text-align: center;"><s:property value="anexo.descripcion_anexo"/></td>
-			<td style="text-align: center;"><s:property value="anexo.documentacion_adicional"/></td>
+			<td style="text-align: center;"><s:property value="id_anexo"/></td>
+			<td style="text-align: center;"><s:property value="captura_pantalla1"/></td>
+			<td style="text-align: center;"><s:property value="captura_pantalla2"/></td>
+			<td style="text-align: center;"><s:property value="captura_pantalla3"/></td>
+			<td style="text-align: center;"><s:property value="descripcion_anexo"/></td>
+			<td style="text-align: center;"><s:property value="documentacion_adicional"/></td>
 		</tr>
 		
 		</s:iterator>
