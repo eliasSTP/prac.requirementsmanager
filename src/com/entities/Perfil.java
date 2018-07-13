@@ -44,6 +44,6 @@ public class Perfil {
 	public void setUsuarios(List<Usuario> usuarios) {
 		this.usuarios = usuarios;
 	}
-	
+
 	
 }

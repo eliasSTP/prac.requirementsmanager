@@ -45,7 +45,7 @@ public class UsuarioAction extends ActionSupport  {
 		usuarioBO.borraUsuario(usuario);
 		return SUCCESS;
 	}
-
+	
 	public Usuario getUsuario() {
 		return usuario;
 	}

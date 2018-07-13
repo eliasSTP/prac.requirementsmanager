@@ -19,23 +19,24 @@ public class AnexoBO {
 		session.close();
 	}
 	
-	public List<Anexo> listAnexo(){
-		Session session = HibernateUtil.getSessionFactory().openSession();
-		Query hqlQuery = session.createQuery("FROM Anexo");
-		List<Anexo> anexos = hqlQuery.list();
-		session.close();
-		return anexos;
-	}
-	
+
 	public Anexo getAnexo(Anexo anexo) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
-		String queryString = "FROM Anexo where id=(:condicion)";
+		String queryString = "FROM Anexo WHERE id_anexo=(:condicion)";
 		Query<Anexo> hqlQuery = session.createQuery(queryString);
 		hqlQuery.setParameter("condicion", anexo.getId_anexo());
 		anexo = hqlQuery.uniqueResult();
 		session.close();
 		return anexo;
 		
+	}
+	
+	public List<Anexo> getAnexos(int idPrueba) {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Query<Anexo> hqlQuery = session.createQuery("FROM Anexo WHERE prueba.id_prueba = "+idPrueba);
+		List<Anexo> anexos = hqlQuery.list();
+		session.close();
+		return anexos;
 	}
 	
 	public void actualizaAnexo(Anexo anexo) {
@@ -54,5 +55,7 @@ public class AnexoBO {
 		transaction.commit();
 		session.close();
 	}
+
+
 
 }

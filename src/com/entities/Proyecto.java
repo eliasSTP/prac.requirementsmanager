@@ -22,14 +22,9 @@ public class Proyecto {
 	private String status ;
 	
 	@OneToMany(cascade=CascadeType.ALL, fetch = FetchType.EAGER, mappedBy="proyecto")
-	private List<Requisito> requisitos ;
+	private List<ProyectoUsuario> usuariosProyecto ;
 	
-	@OneToMany(cascade=CascadeType.ALL, fetch = FetchType.EAGER, mappedBy="proyecto")
-	private List<Usuario> usuarios ;
-	
-/*	@ManyToOne
-	private Cliente cliente ;*/
-	
+
 	public int getId_proyecto() {
 		return id_proyecto;
 	}
@@ -54,24 +49,10 @@ public class Proyecto {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public List<Requisito> getRequisitos() {
-		return requisitos;
+	public List<ProyectoUsuario> getUsuariosProyecto() {
+		return usuariosProyecto;
 	}
-	public void setRequisitos(List<Requisito> requisitos) {
-		this.requisitos = requisitos;
+	public void setUsuariosProyecto(List<ProyectoUsuario> usuariosProyecto) {
+		this.usuariosProyecto = usuariosProyecto;
 	}
-/*	public Cliente getCliente() {
-		return cliente;
-	}
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
-	public List<Usuario> getUsuarios() {
-		return usuarios;
-	}
-	public void setUsuarios(List<Usuario> usuarios) {
-		this.usuarios = usuarios;
-	}*/
-	
-		
 }

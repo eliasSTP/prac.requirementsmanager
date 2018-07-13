@@ -27,12 +27,12 @@
 			<result>/index.jsp</result>
 		</action>
  		<action name="consultaPerfiles" class="com.actions.PerfilAction" method="consultaPeAc">
-			<result>/consultaRequisitos.jsp</result>
+			<result>/consultaPerfiles.jsp</result>
 		</action>
 		<action name="modificacion1Perfil" class="com.actions.PerfilAction" method="inicioModificacionPeAc">
 			<result>/modificacion.jsp</result>
 		</action>
-			<action name="modificarPerfil" class="com.actions.PerfilAction" method="modificaPeAc">
+		<action name="modificarPerfil" class="com.actions.PerfilAction" method="modificaPeAc">
 			<result>/index.jsp</result>
 		</action>
 		<action name="borrarPerfil" class="com.actions.PerfilAction" method="borraPeAc">
@@ -43,7 +43,7 @@
 			<result>/index.jsp</result>
 		</action>
  		<action name="consultaUsuarios" class="com.actions.UsuarioAction" method="consultaUsAc">
-			<result>/consultaRequisitos.jsp</result>
+			<result>/consultaUsuarios.jsp</result>
 		</action>
 		<action name="modificacion1Usuario" class="com.actions.UsuarioAction" method="inicioModificacionUsAc">
 			<result>/modificacion.jsp</result>
@@ -59,7 +59,7 @@
 			<result>/index.jsp</result>
 		</action>
  		<action name="consultaProyectos" class="com.actions.ProyectoAction" method="consultaPrAc">
-			<result>/consultaRequisitos.jsp</result>
+			<result>/consultaProyectos.jsp</result>
 		</action>
 		<action name="modificacion1Proyecto" class="com.actions.ProyectoAction" method="inicioModificacionPrAc">
 			<result>/modificacion.jsp</result>
@@ -71,30 +71,39 @@
 			<result>/index.jsp</result>
 		</action> 
 		
-		<action name="altaRequisto" class="com.actions.RequisitoAction" method="altaReAc">
+		<action name="consultaProyectosUsuario" class="com.actions.ProyectoAction" method="listPrUsAc">
+			<result>/proyectosUsuario.jsp</result>
+		</action>		
+		
+<!-- 		<action name="altaRequisto" class="com.actions.RequisitoAction" method="altaReAc">
 			<result>/index.jsp</result>
 		</action>
  		<action name="consultaRequisitos" class="com.actions.RequisitoAction" method="consultaReAc">
 			<result>/consultaRequisitos.jsp</result>
 		</action>
+		
+		 <action name="consultaRequisitos" class="com.actions.RequisitoAction" method="consultaReqProy">
+			<result>/consultaRequisitos.jsp</result>
+		</action>
+		
 		<action name="modificacion1Requisitos" class="com.actions.RequisitoAction" method="inicioModificacionReAc">
 			<result>/modificacion.jsp</result>
 		</action>
-			<action name="modificarRequisitos" class="com.actions.RequisitoAction" method="modificaReAc">
+		<action name="modificarRequisitos" class="com.actions.RequisitoAction" method="modificaReAc">
 			<result>/index.jsp</result>
 		</action>
 		<action name="borrarRequisitos" class="com.actions.RequisitoAction" method="borraReAc">
 			<result>/index.jsp</result>
-		</action>  
+		</action>   -->
 		
 		<action name="altaPrueba" class="com.actions.PruebaAction" method="altaTestAc">
 			<result>/index.jsp</result>
 		</action>
  		<action name="consultaPruebas" class="com.actions.PruebaAction" method="consultaTestAc">
-			<result>/consultaRequisitos.jsp</result>
+			<result>/consultaPruebas.jsp</result>
 		</action>
 		<action name="modificacion1Prueba" class="com.actions.PruebaAction" method="inicioModificacionTestAc">
-			<result>/modificacion.jsp</result>
+			<result>/modificacionPrueba.jsp</result>
 		</action>
 			<action name="modificarPrueba" class="com.actions.PruebaAction" method="modificaTestAc">
 			<result>/index.jsp</result>
@@ -106,20 +115,18 @@
 		<action name="altaAnexo" class="com.actions.AnexoAction" method="altaAnAc">
 			<result>/index.jsp</result>
 		</action>
- 		<action name="consultaAnexos" class="com.actions.AnexoAction" method="consultaAnAc">
-			<result>/consultaAnexos.jsp</result>
+		 <action name="consultaAnexosPrueba" class="com.actions.AnexoAction" method="listAnTestAc">
+			<result>/anexosPrueba.jsp</result>
 		</action>
 		<action name="modificacion1Anexos" class="com.actions.AnexoAction" method="inicioModificacionAnAc">
-			<result>/modificacion.jsp</result>
+			<result>/modificacionAnexosPrueba.jsp</result>
 		</action>
-			<action name="modificarAnexos" class="com.actions.AnexoAction" method="modificaAnAc">
-			<result>/index.jsp</result>
+		<action name="modificarAnexos" class="com.actions.AnexoAction" method="modificaAnAc">
+			<result>/modificacionAnexosPrueba.jsp</result>
 		</action>
 		<action name="borrarAnexos" class="com.actions.AnexoAction" method="borraAnAc">
-			<result>/index.jsp</result>
+			<result>/consultaPruebas.jsp</result>
 		</action> 
-		
-		
-		
+	
 	</package>
 </struts>

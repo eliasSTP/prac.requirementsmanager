@@ -19,7 +19,7 @@ public class PerfilBO {
 		session.close();
 	}
 	
-	public List<Perfil> listPerfil(){
+	public List<Perfil> listPerfiles(){
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Query hqlQuery = session.createQuery("FROM Perfil");
 		List<Perfil> perfiles = hqlQuery.list();
@@ -29,7 +29,7 @@ public class PerfilBO {
 	
 	public Perfil getPerfil(Perfil perfil) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
-		String queryString = "FROM Perfil where id=(:condicion)";
+		String queryString = "FROM Perfil WHERE id_perfil=(:condicion)";
 		Query<Perfil> hqlQuery = session.createQuery(queryString);
 		hqlQuery.setParameter("condicion", perfil.getId_perfil());
 		perfil = hqlQuery.uniqueResult();

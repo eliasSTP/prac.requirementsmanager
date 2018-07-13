@@ -29,7 +29,7 @@ public class UsuarioBO {
 	
 	public Usuario getUsuario(Usuario usuario) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
-		String queryString = "FROM Usuario where id=(:condicion)";
+		String queryString = "FROM Usuario WHERE id_usuario=(:condicion)";
 		Query<Usuario> hqlQuery = session.createQuery(queryString);
 		hqlQuery.setParameter("condicion", usuario.getId_usuario());
 		usuario = hqlQuery.uniqueResult();
@@ -54,6 +54,5 @@ public class UsuarioBO {
 		transaction.commit();
 		session.close();
 	}
-
-
+	
 }

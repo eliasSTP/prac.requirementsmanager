@@ -8,7 +8,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+/*import javax.persistence.ManyToOne;*/
 import javax.persistence.OneToMany;
 
 @Entity
@@ -26,8 +26,8 @@ public class Prueba {
 	private String resultado_real ;
 	private String incidencia ;
 	
-	@ManyToOne
-	private Requisito requisito ;
+/*	@ManyToOne
+	private Requisito requisito ;*/
 	
 	@OneToMany(cascade=CascadeType.ALL, fetch = FetchType.EAGER, mappedBy="prueba")
 	private List<Anexo> anexos ;
@@ -114,12 +114,12 @@ public class Prueba {
 		this.incidencia = incidencia;
 	}
 
-	public Requisito getRequisito() {
+/*	public Requisito getRequisito() {
 		return requisito;
 	}
 
 	public void setRequisito(Requisito requisito) {
 		this.requisito = requisito;
-	}
+	}*/
 
 }

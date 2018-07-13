@@ -8,7 +8,7 @@
 	<property name="hibernate.connection.isolation">2</property>
 	<property name="hibernate.connection.password">desastp</property>
 	<property name="hibernate.connection.pool_size">10</property>
-	<property name="hibernate.connection.url">jdbc:mysql://stpdevbbdd:3036/requirements_manager</property>
+	<property name="hibernate.connection.url">jdbc:mysql://stpvdevbbdd:3306/requirements_manager</property>
 	<property name="hibernate.connection.username">root</property>
 	<property name="hibernate.current_session_context_class">managed</property>
 	<property name="hibernate.dialect">org.hibernate.dialect.MySQL57Dialect</property>
