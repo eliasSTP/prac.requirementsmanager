@@ -20,7 +20,7 @@
 		
 		<s:iterator value="usuario.proyectosUsuario">
 		<tr>
-			<td style="text-align: center;"><a href="consultaPrAc.action?id_proyecto=<s:property value="proyecto.id_proyecto"/>"><s:property value="proyecto.id_proyecto"/></a></td>
+			<td style="text-align: center;"><a href="consultaProyectosUsuarios.action?id_proyecto=<s:property value="proyecto.id_proyecto"/>"><s:property value="proyecto.id_proyecto"/></a></td>
 			<td style="text-align: center;"><s:property value="proyecto.descripcion"/></td>
 			<td style="text-align: center;"><s:property value="proyecto.fecha"/></td>
 			<td style="text-align: center;"><s:property value="proyecto.status"/></td>

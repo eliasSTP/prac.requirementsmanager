@@ -22,7 +22,7 @@
 	<s:iterator value="proyectos">
 
 	<tr>
-		<td style="text-align: center;"><a href="consultaPrAc.action?id_proyecto=<s:property value="id_proyecto"/>"><s:property value="id_proyecto"/></a></td>
+		<td style="text-align: center;"><a href="consultaProyectos.action?id_proyecto=<s:property value="id_proyecto"/>"><s:property value="id_proyecto"/></a></td>
 		<td style="text-align: center;"><s:property value="descripcion"/></td>
 		<td style="text-align: center;"><s:property value="fecha"/></td>
 		<td style="text-align: center;"><s:property value="status"/></td>

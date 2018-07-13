@@ -6,14 +6,14 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
-/*import com.entities.Anexo;*/
+import com.entities.Anexo;
 import com.entities.Cliente;
 import com.entities.Perfil;
 import com.entities.Usuario;
 import com.entities.Proyecto;
 import com.entities.ProyectoUsuario;
-/*import com.entities.Prueba;
-import com.entities.Requisito;*/
+import com.entities.Prueba;
+/*import com.entities.Requisito;*/
 
 
 public class HibernateUtil {
@@ -33,8 +33,8 @@ public class HibernateUtil {
 				sources.addAnnotatedClass(ProyectoUsuario.class);
 /*				sources.addAnnotatedClass(Requisito.class);*/
 				sources.addAnnotatedClass(Perfil.class);
-/*				sources.addAnnotatedClass(Prueba.class);
-				sources.addAnnotatedClass(Anexo.class);*/
+				sources.addAnnotatedClass(Prueba.class);
+				sources.addAnnotatedClass(Anexo.class);
 				
 				Metadata metadata = sources.getMetadataBuilder().build();
 				sessionFactory = metadata.getSessionFactoryBuilder().build();

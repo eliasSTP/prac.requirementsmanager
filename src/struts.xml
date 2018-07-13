@@ -103,7 +103,7 @@
 			<result>/consultaPruebas.jsp</result>
 		</action>
 		<action name="modificacion1Prueba" class="com.actions.PruebaAction" method="inicioModificacionTestAc">
-			<result>/modificacion.jsp</result>
+			<result>/modificacionPrueba.jsp</result>
 		</action>
 			<action name="modificarPrueba" class="com.actions.PruebaAction" method="modificaTestAc">
 			<result>/index.jsp</result>
@@ -115,17 +115,17 @@
 		<action name="altaAnexo" class="com.actions.AnexoAction" method="altaAnAc">
 			<result>/index.jsp</result>
 		</action>
- 		<action name="consultaAnexos" class="com.actions.AnexoAction" method="consultaAnAc">
-			<result>/consultaAnexos.jsp</result>
+		 <action name="consultaAnexosPrueba" class="com.actions.AnexoAction" method="listAnTestAc">
+			<result>/anexosPrueba.jsp</result>
 		</action>
 		<action name="modificacion1Anexos" class="com.actions.AnexoAction" method="inicioModificacionAnAc">
-			<result>/modificacion.jsp</result>
+			<result>/modificacionAnexosPrueba.jsp</result>
 		</action>
 		<action name="modificarAnexos" class="com.actions.AnexoAction" method="modificaAnAc">
-			<result>/index.jsp</result>
+			<result>/modificacionAnexosPrueba.jsp</result>
 		</action>
 		<action name="borrarAnexos" class="com.actions.AnexoAction" method="borraAnAc">
-			<result>/index.jsp</result>
+			<result>/consultaPruebas.jsp</result>
 		</action> 
 	
 	</package>

@@ -29,7 +29,7 @@ public class PruebaBO {
 	
 	public Prueba getPrueba(Prueba prueba) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
-		String queryString = "FROM Prueba where id=(:condicion)";
+		String queryString = "FROM Prueba where id_prueba=(:condicion)";
 		Query<Prueba> hqlQuery = session.createQuery(queryString);
 		hqlQuery.setParameter("condicion", prueba.getId_prueba());
 		prueba = hqlQuery.uniqueResult();

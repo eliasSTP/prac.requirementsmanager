@@ -64,6 +64,8 @@ public class ProyectoBO {
 		transaction.commit();
 		session.close();
 	}
+
+/*	No se utiliza la query. Las relaciones de Hibernate lo hace innecesario
 	
 	public List<Proyecto> selectProUser(Usuario usuario) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
@@ -77,6 +79,8 @@ public class ProyectoBO {
 		Query<Proyecto> proyectos =session.createQuery(criteria);
 		return (List<Proyecto>) proyectos.list();		
 
-	}
+	}*/
 	
 }
+
+

@@ -15,14 +15,16 @@
 		<a href="altaClientes.jsp">Alta del cliente</a> <br/>
 		<a href="altaUsuarios.jsp">Alta Usuarios</a><br/>
 		<a href="altaProyecto.jsp">Alta Proyectos</a><br/>
-		<a href="altaRequisitos.jsp">Alta Requisitos</a><br/>
+		<!-- <a href="altaRequisitos.jsp">Alta Requisitos</a><br/> -->
 		<a href="altaPruebas.jsp">Alta Pruebas</a><br/>
+		<a href="altaAnexos.jsp">Alta Anexos</a><br/>
 		<a href="consultaClientes.action">Listado de clientes</a> <br/>
 		<a href="consultaPerfiles.action">Listado de perfiles</a> <br/>
 		<a href="consultaUsuarios.action">Listado de usuarios</a> <br/>
 		<a href="consultaProyectos.action">Listado de proyectos</a> <br/>
-		<a href="consultaProyectosUsuario.action">Listado de proyectos del usuario</a> <br/> 
-<!-- 		<a href="consultaAnexos.jsp">Consulta anexos</a> <br/> -->
+		<a href="consultaProyectosUsuario.action">Listado de proyectos del usuario</a> <br/>
+		<a href="consultaPruebas.action">Listado de pruebas</a> <br/> 
+		<a href="consultaAnexosPrueba.action">Listado de anexos de una prueba</a> <br/>
 	</div>
 
 </body>

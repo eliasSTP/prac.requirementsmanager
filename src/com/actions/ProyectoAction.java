@@ -52,10 +52,8 @@ public class ProyectoAction extends ActionSupport {
 	public String listPrUsAc() {
 		//ProyectoBO proyectoBO = new ProyectoBO();
 		UsuarioBO usuarioBO = new UsuarioBO();
-		
 		Usuario usuario1 = new Usuario();
 		usuario1.setId_usuario(6);
-		
 		usuario = usuarioBO.getUsuario(usuario1);
 		
 		//proyectoBO.selectProUser(usuario);
@@ -89,4 +87,5 @@ public class ProyectoAction extends ActionSupport {
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
+	
 }
